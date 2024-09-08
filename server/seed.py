@@ -50,8 +50,8 @@ if __name__ == '__main__':
     with app.app_context():
         print("Clearing db...")
         Activity.query.delete()
-        Signup.query.delete()
         Camper.query.delete()
+        Signup.query.delete()
 
         print("Seeding activities...")
         activities = create_activities()
